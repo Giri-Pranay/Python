@@ -1,0 +1,2449 @@
+*********************************************************  PYTHON ************************************************************************
+
+
+////////////////////////////////////////////////////////   DAY-1   ///////////////////////////////////////////////////////////////////////
+
+-----------------INT-------------
+
+>>> a=10
+>>> print (a,type(a))
+10 <class 'int'>
+>>>
+>>>
+>>>
+>>> a=100
+>>> b=120
+>>> c=a+b
+>>> print(a,type(a))
+100 <class 'int'>
+>>> print(c,type(c))
+220 <class 'int'>
+
+-------------FLOAT--------------
+>>> a=10
+>>> b=2.3
+>>> c=3.12
+>>> print(b,type(b))
+2.3 <class 'float'>
+>>> print (a+b,type(a+b))
+12.3 <class 'float'>
+>>> print(b+c,type(b+c))
+5.42 <class 'float'>
+>>> d=1.7
+>>> print (c+d,type(c+d))
+4.82 <class 'float'>
+>>> print (b+d,type(b+d))
+4.0 <class 'float'>
+>>>
+>>>
+
+--------------------BOOL--------------------------
+
+>>> a=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+
+>>> a=false
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'false' is not defined. Did you mean: 'False'?
+
+>>> a=True
+>>> print(a,type(a))
+True <class 'bool'>
+>>> b=False
+>>> print(b,type(b))
+False <class 'bool'>
+>>> print (a+b)
+1
+>>> print(True+True)
+2
+>>> print(True+False)
+1
+>>> print(False+False)
+0
+>>> print(True-2-3)
+-4
+>>> print(False+2-3)
+-1
+>>>
+>>>
+>>> print(0b1010)
+10
+>>> print(0b0011)
+3
+>>> print(0b0011+True)
+4
+>>> print(0b0011+False)
+3
+>>> print(True/True)
+1.0
+>>> print(True//True)
+1
+>>> print(2/2)
+1.0
+>>> print(2//2)
+1
+>>> print(4/3)
+1.3333333333333333
+>>> print(4//3)
+1
+>>>
+>>>
+>>> print(False/False)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> print(True/False)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>>
+>>> print (False/True)
+0.0
+>>> print (False//True)
+0
+>>>
+>>>
+>>>
+>>>
+
+---------------------COMPLEX-----------------------------
+
+
+
+>>> a=3+4j
+>>> b=2+3j
+>>> c=a+b
+>>> print(c,type(c))
+(5+7j) <class 'complex'>
+>>> d=a*b
+>>> print(d,type(d))
+(-6+17j) <class 'complex'>
+>>>
+>>> print(a,type(a))
+(3+4j) <class 'complex'>
+>>>
+>>> print(a-b,type(a-b))
+(1+1j) <class 'complex'>
+>>>
+>>> a=5j+4
+>>> print(a.real)
+4.0
+>>> print(a.imag)
+5.0
+>>> print(a,type(a))
+(4+5j) <class 'complex'>
+>>>
+>>> print(a.imaginary)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'imaginary'
+>>>
+>>> a=-1.2j
+>>> print (a,type(a))
+(-0-1.2j) <class 'complex'>
+>>>
+>>> b=-1-2j
+>>> print (a,type(a))
+(-0-1.2j) <class 'complex'>
+>>>
+>>>  b=-1-2j
+  File "<stdin>", line 1
+    b=-1-2j
+IndentationError: unexpected indent
+>>>
+>>> print(b,type(b))
+(-1-2j) <class 'complex'>
+>>>
+>>> a=-2.3-4.5j
+>>> print(a,type(a))
+(-2.3-4.5j) <class 'complex'>
+>>> print(a.real)
+-2.3
+>>> print(a.imag)
+-4.5
+>>>
+>>>
+>>> a=-3j
+>>> print(a,type)
+(-0-3j) <class 'type'>
+>>> print(a.real)
+-0.0
+>>> print(a.imag)
+-3.0
+
+
+
+
+////////////////////////////////////////////////////////////////////////// DAY-2 //////////////////////////////////////////////////////
+
+
+>>> ' Myself Padala Giri Pranay '
+' Myself Padala Giri Pranay '
+
+
+>>> a=  ' Myself Padala Giri Pranay '
+>>>
+>>> print(a)
+ Myself Padala Giri Pranay
+>>> print (a,type(a))
+ Myself Padala Giri Pranay  <class 'str'>
+>>>
+
+
+>>> b= " I am Electrical and Electronics Engineer "
+>>> print (b,type(b))
+ I am Electrical and Electronics Engineer  <class 'str'>
+>>>
+>>>
+
+>>> c= ''' I am Padala Giri Pranay 21 year old
+...              Completed my graduation in EEE
+...              at TKR College of Engineering and Technology '''
+>>> print (c,type(c))
+ I am Padala Giri Pranay 21 year old
+             Completed my graduation in EEE
+             at TKR College of Engineering and Technology  <class 'str'>
+
+
+>>> d= """ now iam in sr nagar
+...               to learn the python full-stack development course
+...               so then i can shift to core to software side """
+>>> print (d,type(d))
+ now iam in sr nagar
+              to learn the python full-stack development course
+              so then i can shift to core to software side  <class 'str'>
+>>>
+>>> """ i am from Palvancha """
+' i am from Palvancha '
+>>>
+
+>>> e= """ i am from Palvancha """
+>>> print (e,type(e))
+ i am from Palvancha  <class 'str'>
+>>>
+
+>>> f=''' i also from palluru, East Godavari Dist (now alluri sitarama raju dist) '''
+>>> print (f,type(f))
+ i also from palluru, East Godavari Dist (now alluri sitarama raju dist)  <class 'str'>
+>>>
+
+>>> g= 'giripranay78'
+>>> print(g)
+giripranay78
+>>>
+
+>>> h= "78@@@@*&%%&W*"
+>>> print(h)
+78@@@@*&%%&W*
+>>>
+
+>>> i=' 123_78@gmail.com'
+>>> print(i,type(i))
+ 123_78@gmail.com <class 'str'>
+
+** import.os
+   os.system('cls')             { clear the data what we type in python }
+
+
+
+
+/////////////////////////////////////////////////////// DAY-3 //////////////////////////////////////////////////////////////////
+
+
+>>>
+>>>  lst=[12,58,58,68,128]
+  File "<stdin>", line 1
+    lst=[12,58,58,68,128]
+IndentationError: unexpected indent
+>>> l1=[12,15,68,128]
+>>> print(l1,type(l1))
+[12, 15, 68, 128] <class 'list'>
+>>> b1=bytes(l1)
+>>> print(b1)
+b'\x0c\x0fD\x80'
+>>> print(b1,type(b1))
+b'\x0c\x0fD\x80' <class 'bytes'>
+>>>
+>>> lst=[128,256,512,1]
+>>> b1=bytes(lst)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: bytes must be in range(0, 256)
+>>>
+>>> b1(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'bytes' object is not callable
+>>> l2[32,64,128,512]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l2' is not defined. Did you mean: 'l1'?
+>>>
+>>>
+>>> a=[12,13,14,15,16]
+>>> print(a,type(a))
+[12, 13, 14, 15, 16] <class 'list'>
+>>> b2=bytes(a)
+>>> print(b2,type(b2))
+b'\x0c\r\x0e\x0f\x10' <class 'bytes'>
+>>> b2(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'bytes' object is not callable
+>>> b2[0]
+12
+>>> b2[2]
+14
+>>> b2[4]
+16
+>>>
+
+
+>>> nxt=[12,23,34,45,56]
+>>> print(nxt,type(nxt))
+[12, 23, 34, 45, 56] <class 'list'>
+>>> b=bytes(nxt)
+>>> print(b,type(b))
+b'\x0c\x17"-8' <class 'bytes'>
+>>>
+>>> for val in b:
+... print(val)
+  File "<stdin>", line 2
+    print(val)
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1
+>>>
+>>> a=[128,256,512]
+>>> b1=bytes(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: bytes must be in range(0, 256)
+>>>
+>>> b2=bytes([11,22,33,44,55])
+>>> print(b2)
+b'\x0b\x16!,7'
+>>> for val in b2:
+... print(val)
+  File "<stdin>", line 2
+    print(val)
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1
+>>> for val in b2:
+...  print(val)
+...
+11
+22
+33
+44
+55
+>>> s1= "giri pranay"
+>>> for val in s1:
+...  print (s1)
+...
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+giri pranay
+>>>
+
+>>>
+>>> g1='padala'
+>>> for val in g1:
+...  print(val)
+...
+p
+a
+d
+a
+l
+a
+>>>
+>>>
+
+
+////////////////////////////////////////////////////////////////////////////// DAY-4 /////////////////////////////////////////////////////////////////////////////
+
+************************** Indexing *************************
+
+>>>
+>>> s='pranay'
+>>> s[1]
+'r'
+>>> s[4]
+'a'
+>>> s[-5]
+'r'
+>>> s[3]
+'n'
+>>> s[-3]
+'n'
+>>> s[0]
+'p'
+>>> s[5]
+'y'
+>>> s[-1]
+'y'
+>>>
+>>> len(s)
+6
+
+>>> s(
+...
+... len]
+  File "<stdin>", line 3
+    len]
+       ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '(' on line 1
+>>>
+
+>>> s(len(s))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+
+>>> s[len(s)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+
+>>> s[len(s)-1]
+'y'
+>>> s[len(s)-3]
+'n'
+>>> s[-len(s)]
+'p'
+>>> len(s)-1
+5
+
+
+******************************* Slicing *************************************
+
+
+>>> a= "python"
+>>> print(a,type(a))
+python <class 'str'>
+>>>
+>>> a[0:6]
+'python'
+>>> a[0:2]
+'py'
+>>> b="padala"
+>>> b[0:6]
+'padala'
+>>> b[0:3]
+'pad'
+>>> b[0:4]
+'pada'
+>>> b[2:5]
+'dal'
+>>> b[5:1]
+''
+>>> print(b[0:2])
+pa
+
+
+
+>>> a='rohith'
+>>> a[-2:-5]
+''
+>>> a[-5:-2]
+'ohi'
+>>> a[1:2]
+'o'
+>>> a[3:2]
+''
+>>> a[-3:6]
+'ith'
+>>> a[-6:-3]
+'roh'
+>>> a[-6:-2]
+'rohi'
+>>> a[-6:-3]
+'roh'
+>>> a[-4:0]
+''
+>>> a[-4:]
+'hith'
+>>> a[-6:]
+'rohith'
+>>>
+
+
+
+>>>
+>>> a='padala'
+>>> print(a,type(a))
+padala <class 'str'>
+>>>
+>>> a[-6:6]
+'padala'
+>>> a[-23456:345]
+'padala'
+>>>
+>>> a[0:6]
+'padala'
+>>> a[0:6:-1]
+''
+>>> a[6:0:-1]
+'alada'
+>>> b=[11,12,13,14,15,16,17,18,19]
+>>> a[6:0:-1]
+'alada'
+>>> b[6:0:-1]
+[17, 16, 15, 14, 13, 12]
+>>> b[-4:-1]
+[16, 17, 18]
+>>> b[-1:-4:-1]
+[19, 18, 17]
+>>>
+>>>
+>>> h=[1,2,3,4,5,6,7,8,9,10]
+>>> h[1:9]
+[2, 3, 4, 5, 6, 7, 8, 9]
+>>> h[1:10:2]
+[2, 4, 6, 8, 10]
+>>> h[2:9:3]
+[3, 6, 9]
+>>>
+>>>
+>>>
+>>> h[-2:-10]
+[]
+>>> b[11,12,13,14,15,16]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not tuple
+>>> b=[11,12,13,14,15,16]
+>>> b[-2:-6]
+[]
+>>> b[-2:-6:-1]
+[15, 14, 13, 12]
+>>> b[-2:-7:-2]
+[15, 13, 11]
+>>> b[-1:-6:-2]
+[16, 14, 12]
+>>>
+>>>
+>>>
+>>> h[-2:-10:-3]
+[9, 6, 3]
+>>> h[-2:-9:-3]
+[9, 6, 3]
+>>>
+
+>>>
+>>> a='pranay'
+>>> a[-5:-4:-1]
+''
+>>> a[-5:-2]
+'ran'
+>>> a[-3:-6:-1]
+'nar'
+>>> a[:0]
+''
+>>> a[:-1:-1]
+''
+>>> a[-5:-2:-1]
+''
+>>> a[-5:-2]
+'ran'
+>>> a[-2:-5:-1]
+'ana'
+>>> a[-1:-4:-1]
+'yan'
+>>>
+>>>
+>>>
+>>> a[-1:-7:-1]
+'yanarp'
+>>> a[-2:-6:-1]
+'anar'
+>>>
+>>> a[2:-2]
+'an'
+>>>
+
+/////////////////////////////////////////////////////////////////////////////// DAY-5 ///////////////////////////////////////////////////////////////////
+
+**************************** BTYEARRAY ****************************
+>>>
+>>>
+>>> a=[11,12,13,14,15,16,17]
+>>> b=bytearray(a)
+>>> print(b,type(a))
+bytearray(b'\x0b\x0c\r\x0e\x0f\x10\x11') <class 'list'>
+>>>
+>>>
+>>> for v in b:
+...  print(v)
+...
+11
+12
+13
+14
+15
+16
+17
+
+>>>
+>>> a[2:]
+[13, 14, 15, 16, 17]
+>>>
+>>> b[2:]
+bytearray(b'\r\x0e\x0f\x10\x11')
+>>>
+>>> a[1]
+12
+>>> b[1]
+12
+>>>
+>>> b[1]=21
+>>> print(b,type(b),id(b))
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'> 2009639368112
+>>>
+>>> for v in b:
+...  print(b,type(b))
+...
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+bytearray(b'\x0b\x15\r\x0e\x0f\x10\x11') <class 'bytearray'>
+>>> for v in b:
+...  print(v,type(b))
+...
+11 <class 'bytearray'>
+21 <class 'bytearray'>
+13 <class 'bytearray'>
+14 <class 'bytearray'>
+15 <class 'bytearray'>
+16 <class 'bytearray'>
+17 <class 'bytearray'>
+>>> .
+
+
+
+
+********************************** RANGE ******************************************
+
+
+
+
+>>> a= range(10)
+>>> print(a,type(a))
+range(0, 10) <class 'range'>
+>>>
+>>> for for v in a:
+  File "<stdin>", line 1
+    for for v in a:
+        ^^^
+SyntaxError: invalid syntax
+>>> for v in a:
+...  print(v)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>>
+>>> b= range(2,7)
+>>> for v in b:
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1
+>>> for v in b:
+...  print(v)
+...
+2
+3
+4
+5
+6
+>>>
+>>> c= range(0,10,2)
+>>> for v in c:
+...  print(c)
+...
+range(0, 10, 2)
+range(0, 10, 2)
+range(0, 10, 2)
+range(0, 10, 2)
+range(0, 10, 2)
+>>>
+>>>
+
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> d= range(2,13,2)
+>>> for v in d:
+...  print(v)
+...
+2
+4
+6
+8
+10
+12
+>>>
+
+                            ^
+SyntaxError: expected ':'
+>>>
+>>> for val in range(0,10,3):
+...  print(val)
+...
+0
+3
+6
+9
+
+
+
+0
+>>> a=[11,12,13,14,15,16,17,18]
+>>>
+>>> a[-3:-5:-1]
+[16, 15]
+>>>
+>>> a[-3:-7:-1]
+[16, 15, 14, 13]
+>>>
+>>>
+>>>
+>>>
+>>> for r in range(-10,11,1)
+  File "<stdin>", line 1
+    for r in range(-10,11,1)
+                            ^
+SyntaxError: expected ':'
+>>>
+>>> for r in range(-10,11,1):
+...  print(r)
+...
+-10
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+>>>
+
+>>>
+>>> n=5
+>>> for v in range(1,11)
+  File "<stdin>", line 1
+    for v in range(1,11)
+                        ^
+SyntaxError: expected ':'
+>>>
+>>> n=5
+>>> for v in range(1,11):
+...  print(n,'x',v,'=',n*v)
+...
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+>>>
+
+0
+>>> for v in range(10):
+...  print(" Giri Pranay")
+...
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+ Giri Pranay
+>>>
+>>>
+>>>
+>>> for v in range(100,51,-2):
+...  print(v)
+...
+100
+98
+96
+94
+92
+90
+88
+86
+84
+82
+80
+78
+76
+74
+72
+70
+68
+66
+64
+62
+60
+58
+56
+54
+52
+>>>
+>>>
+>>>
+>>> for v in range(-100,-51,-2):
+...  print(v)
+...
+>>>
+>>>
+>>> for v in range (-50,-101,-2):
+...  print(v)
+...
+-50
+-52
+-54
+-56
+-58
+-60
+-62
+-64
+-66
+-68
+-70
+-72
+-74
+-76
+-78
+-80
+-82
+-84
+-86
+-88
+-90
+-92
+-94
+-96
+-98
+-100
+
+
+>>>
+>>> for v in range(0,11)[1:6]:
+...  print(v)
+...
+1
+2
+3
+4
+5
+>>>
+>>>
+>>> for u in range(0,11)[5:0:-1]:
+...  print(u)
+...
+5
+4
+3
+2
+1
+
+///////////////////////////////////////////////////////// DAY-6 /////////////////////////////////////////////////////////////////
+
+
+************************ LIST **********************************
+>>> lst=[]
+>>> print (lst,type(lst))
+[] <class 'list'>
+>>>
+>>> lst=list()
+>>> print (lst,type(lst))
+[] <class 'list'>
+>>>
+>>>
+>>> lst=[1,2,3,4,5,6,7,8,9,10]
+>>> print (lst,type(lst))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] <class 'list'>
+>>>
+>>> lst=list(1,2,3,4,5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 5
+>>>
+>>> lst=list([1,2,3,4,5])
+>>> print (lst,type(lst))
+[1, 2, 3, 4, 5] <class 'list'>
+>>>
+>>>
+>>> a= "GIRIPRANAY"
+>>> print (a,type(a))
+GIRIPRANAY <class 'str'>
+>>>
+>>> lst=list(a)
+>>> print (lst,type(lst))
+['G', 'I', 'R', 'I', 'P', 'R', 'A', 'N', 'A', 'Y'] <class 'list'>
+>>>
+>>>
+>>> r=range(-100,-51,-10)
+>>> print (r,type(r))
+range(-100, -51, -10) <class 'range'>
+>>> for v in r:
+...  print(v)
+...
+>>>
+>>> r=range(-50,-101,-10)
+>>> for v in r:
+...  print(v)
+...
+-50
+-60
+-70
+-80
+-90
+-100
+>>> r
+range(-50, -101, -10)
+>>>
+
+>>> a=[]
+>>> a
+[]
+>>> a=list()
+>>> a
+[]
+>>> a[1,2,3,4,5,6,7,8,9,10]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not tuple
+>>> a=[1,2,3,4,5,6,7,8,9,10]
+>>> a
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>>
+>>> a=list(1,2,3,4,5,6,7,8,9,10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 10
+>>> a=list('pranay','giri','padala')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 3
+
+>>> b=list(a)
+>>> b
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>>
+>>>
+>>> for v in b:
+...  print(v)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+>>>
+>>>
+>>> a=10,2+3j,2.32
+>>> r=list(a)
+>>> print(r)
+[10, (2+3j), 2.32]
+>>> b=2+3j
+>>> r=list(b)
+
+
+
+>>> a= [1,2,3,4,5,6]
+>>> b=list(a).cpoy()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'cpoy'
+>>> b=list(a).copy()
+>>> print(b,type(b))
+[1, 2, 3, 4, 5, 6] <class 'list'>
+>>> print(b,type(b),id(b))
+[1, 2, 3, 4, 5, 6] <class 'list'> 2973539717888
+>>> print(a,type(a),id(a))
+[1, 2, 3, 4, 5, 6] <class 'list'> 2973537057152
+>>>
+>>> c=list(b).copy()
+>>> print(c,type(c),id(c))
+[1, 2, 3, 4, 5, 6] <class 'list'> 2973539712256
+>>>
+>>>
+>>>
+>>> c=d
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined. Did you mean: 'id'?
+>>> d=c
+>>> print(d,type(d),id(d))
+[1, 2, 3, 4, 5, 6] <class 'list'> 2973539712256
+>>>
+>>> d.remove(6)
+>>> print(c,type(c),id(c))
+[1, 2, 3, 4, 5] <class 'list'> 2973539712256
+>>>
+
+0
+>>> a=[1,1,2,3,4,5,5,6,7,7,8]
+>>>
+>>> a.count(1)
+2
+>>> a.count(6)
+1
+>>> a.count(7)
+2
+>>> a.count(10)
+
+
+>>> [11,11,12,13,14,15,16,17,18].count(11,13,31)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list.count() takes exactly one argument (3 given)
+>>> [11,11,12,13,14,15,16,17,18].count(11)
+2
+>>>
+****************** index ****************
+
+
+>>> a=[1,1,2,3,4,5,5,6,7,7,8]
+>>>
+>>> a.index(2)
+2
+>>> a.index(1)
+0
+>>> a.index(8)
+10
+>>>
+
+
+
+******************* reverse ********************
+
+0
+>>> a=[1,1,2,3,4,5,5,6,7,7,8]
+>>> a
+[1, 1, 2, 3, 4, 5, 5, 6, 7, 7, 8]
+>>>
+>>> a.reverse()
+>>> a
+[8, 7, 7, 6, 5, 5, 4, 3, 2, 1, 1]
+>>>
+>>> b= a.reverse()
+>>> print(b,type(b),id(b))
+None <class 'NoneType'> 140704942849744
+>>>
+>>> print(a,type(a),id(a))
+[1, 1, 2, 3, 4, 5, 5, 6, 7, 7, 8] <class 'list'> 2973539717888
+>>>
+>>> c=a.reverse()
+>>> print(a,type(a),id(a))
+[8, 7, 7, 6, 5, 5, 4, 3, 2, 1, 1] <class 'list'> 2973539717888
+>>> print(c,type(c),id(c))
+None <class 'NoneType'> 140704942849744
+>>>
+>>>
+>>> b=a.sort()
+>>> print(b,type(b),id(b))
+None <class 'NoneType'> 140704942849744
+>>>
+>>> print(a,type(a),id(a))
+[1, 1, 2, 3, 4, 5, 5, 6, 7, 7, 8] <class 'list'> 2973539717888
+
+
+>>> b=a.sort(reverse is True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'reverse' is not defined. Did you mean: 'reversed'?
+
+>>> b=a.sort(reverse= True)
+>>> print(a,type(a),id(a))
+[8, 7, 7, 6, 5, 5, 4, 3, 2, 1, 1] <class 'list'> 2973539717888
+>>>
+>>> b=a.sort(reverse= False)
+>>> print(a,type(a),id(a))
+[1, 1, 2, 3, 4, 5, 5, 6, 7, 7, 8] <class 'list'> 2973539717888
+>>>
+
+
+******************************  extend  *****************************
+
+0
+>>> a=[1,2,3,4,5,6,7,8,9,10]
+>>>
+>>> b=[11,12,13,14,15,16,17,18,19]
+>>>
+>>> print(a,type(a),id(a))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] <class 'list'> 2973537057152
+>>>
+>>> print(b,type(b),id(b))
+[11, 12, 13, 14, 15, 16, 17, 18, 19] <class 'list'> 2973536737536
+>>>
+>>>
+>>> a.extend(b)
+>>> print(a,type(a),id(a))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] <class 'list'> 2973537057152
+>>>
+>>> b.extend(a)
+>>> print(b,type(b),id(b))
+[11, 12, 13, 14, 15, 16, 17, 18, 19, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] <class 'list'> 2973536737536
+
+
+>>> a=[1,2,3,4,5,6,7,8,9,10]
+>>> b=[11,12,13,14,15,16,17,18,19]
+>>>
+>>> c=[21,22,23,24,25,26,27,28,29,30]
+>>>
+>>> a= a+b+c
+>>> print(a,type(a),id(a))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30] <class 'list'> 2973539645760
+>>>
+>>> b=b+c
+>>> print(b,type(b),id(b))
+[11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30] <class 'list'> 2973539717888
+>>>
+
+******************************* Inner or Nested List ****************************
+>>> a=[21,'PRANAY',[11,12,13,14],'TKR',[101,102,103],'giri']
+>>>
+>>> a[2]
+[11, 12, 13, 14]
+>>> a[2][3]
+14
+>>>
+>>> del a[2][3]
+>>> a
+[21, 'PRANAY', [11, 12, 13], 'TKR', [101, 102, 103], 'giri']
+
+
+
+
+########### **** PRACTICE ****** #############
+>>> a=list('pranay')
+>>> print(a,type(a))
+['p', 'r', 'a', 'n', 'a', 'y'] <class 'list'>
+>>>
+>>> b=bytes(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object cannot be interpreted as an integer
+>>>
+>>> c=list(1,2,3,4,5,6,7,8,9,10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 10
+>>>
+>>> c=list(1,2+3j,2.32,True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 4
+>>> c=list([1,2+3j,2.32,True])
+>>> print(c,type(c))
+[1, (2+3j), 2.32, True] <class 'list'>
+>>>
+>>> d=[1,21,31,41,51,61]
+>>> b=bytes(d)
+>>> print(d,type(d))
+[1, 21, 31, 41, 51, 61] <class 'list'>
+>>>
+>>> print(b,type(b))
+b'\x01\x15\x1f)3=' <class 'bytes'>
+>>>
+>>> for k in b:
+... print(k,type(k))
+  File "<stdin>", line 2
+    print(k,type(k))
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1
+>>> for k in b:
+...  print(k,type(k))
+...
+1 <class 'int'>
+21 <class 'int'>
+31 <class 'int'>
+41 <class 'int'>
+51 <class 'int'>
+61 <class 'int'>
+>>>
+>>> d.append(71)
+>>> print(d,type(d))
+[1, 21, 31, 41, 51, 61, 71] <class 'list'>
+>>>
+>>> d.insert(1,11)
+>>> print(d,type(d))
+[1, 11, 21, 31, 41, 51, 61, 71] <class 'list'>
+>>>
+>>> d.remove(1)
+>>>
+>>> print(d,type(d))
+[11, 21, 31, 41, 51, 61, 71] <class 'list'>
+>>>
+>>> d.pop(6)
+71
+>>> print(d,type(d))
+[11, 21, 31, 41, 51, 61] <class 'list'>
+>>>
+>>> d.pop()
+61
+>>> print(d,type(d))
+[11, 21, 31, 41, 51] <class 'list'>
+>>>
+>>> d.clear()
+>>> print(d,type(d))
+[] <class 'list'>
+>>>
+
+>>> b=[101,102,103,104,104,105,106,107]
+>>> a=[11,21,31,41,51,61,71,81]
+>>>
+>>> print(a,type(a),id(a))
+[11, 21, 31, 41, 51, 61, 71, 81] <class 'list'> 2038920263104
+>>>
+>>> print(b,type(b),id(b))
+[101, 102, 103, 104, 104, 105, 106, 107] <class 'list'> 2038921580544
+>>>
+>>> c=a.copy(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list.copy() takes no arguments (1 given)
+>>>
+>>> c=a.copy()
+>>> print(c,type(c),id(c))
+[11, 21, 31, 41, 51, 61, 71, 81] <class 'list'> 2038917609856
+>>>
+>>> d=b
+>>> print(d,type(d),id(d))
+[101, 102, 103, 104, 104, 105, 106, 107] <class 'list'> 2038921580544
+>>>
+>>> d.remove(107)
+>>> print(d,type(d),id(d))
+[101, 102, 103, 104, 104, 105, 106] <class 'list'> 2038921580544
+>>> print(b,type(b),id(b))
+[101, 102, 103, 104, 104, 105, 106] <class 'list'> 2038921580544
+>>>
+>>> a.count(104)
+0
+>>> b.count(104)
+2
+>>> [12,12,13,21,31,41]
+[12, 12, 13, 21, 31, 41]
+>>> [12,12,13,21,31,41].count(12)
+2
+
+>>> a.index(41)
+3
+>>> d.index(104)
+3
+>>> d.index(108)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 108 is not in list
+>>>
+>>>
+>>> a.reverse()
+>>> print(a,type(a),id(a))
+[81, 71, 61, 51, 41, 31, 21, 11] <class 'list'> 2038920263104
+>>>
+>>> a.sort()
+>>> print(a,type(a),id(a))
+[11, 21, 31, 41, 51, 61, 71, 81] <class 'list'> 2038920263104
+>>>
+>>> a.sort(reverse=True)
+>>> print(a,type(a),id(a))
+[81, 71, 61, 51, 41, 31, 21, 11] <class 'list'> 2038920263104
+>>>
+>>> a.sort(reverse=False)
+>>> print(a,type(a),id(a))
+[11, 21, 31, 41, 51, 61, 71, 81] <class 'list'> 2038920263104
+>>>
+>>>
+>>> a.extend(b)
+>>> print(a,type(a),id(a))
+[11, 21, 31, 41, 51, 61, 71, 81, 101, 102, 103, 104, 104, 105, 106] <class 'list'> 2038920263104
+>>>
+>>> b.extend(a)
+>>> print(b,type(b),id(b))
+[101, 102, 103, 104, 104, 105, 106, 11, 21, 31, 41, 51, 61, 71, 81, 101, 102, 103, 104, 104, 105, 106] <class 'list'> 2038921580544
+>>>
+>>> x = a+b+c+d
+>>> print(x,type(x),id(x))
+[11, 21, 31, 41, 51, 61, 71, 81, 101, 102, 103, 104, 104, 105, 106, 101, 102, 103, 104, 104, 105, 106, 11, 21, 31, 41, 51, 61, 71, 81, 101, 102, 103, 104, 104, 105, 106, 11, 21, 31, 41, 51, 61, 71, 81, 101, 102, 103, 104, 104, 105, 106, 11, 21, 31, 41, 51, 61, 71, 81, 101, 102, 103, 104, 104, 105, 106] <class 'list'> 2038917288320
+>>>
+
+
+
+********************************* Tuple ************************
+
+>>> a=tuple()
+>>> print(a,type(a))
+() <class 'tuple'>
+>>> a=()
+>>> print(a,type(a))
+() <class 'tuple'>
+>>>
+
+
+>>> a= (11,12,13,'giri',2+3j,True)
+>>> print(a,type(a))
+(11, 12, 13, 'giri', (2+3j), True) <class 'tuple'>
+>>>
+
+>>> b= tuple(a)
+>>> print(b,type(b))
+(11, 12, 13, 'giri', (2+3j), True) <class 'tuple'>
+
+>>> c= 1,2,34,'giri'
+>>> print(c,type(c))
+(1, 2, 34, 'giri') <class 'tuple'>
+>>>
+
+
+>>> t1= (10,"Travis",45.67,"Numpy",True)
+>>> print(t1,type(t1))
+(10, 'Travis', 45.67, 'Numpy', True) <class 'tuple'>
+>>>
+>>> t1[0]
+10
+>>> t1(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object is not callable
+>>>
+>>> t1[-2:-5:-1]
+('Numpy', 45.67, 'Travis')
+>>>
+>>> t1[1:4:1]
+('Travis', 45.67, 'Numpy')
+
+>>> t1= (10,"Travis",45.67,"Numpy",True)
+>>> t2=t1
+>>> print(t1,type(t1),id(t1))
+(10, 'Travis', 45.67, 'Numpy', True) <class 'tuple'> 2400488702736
+>>>                                                                          
+>>> print(t2,type(t2),id(t2))
+(10, 'Travis', 45.67, 'Numpy', True) <class 'tuple'> 2400488702736
+>>>
+>>>
+>>> t2= t1.copy()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'copy'
+>>>                                                      { deep copy supports but not shallow copy}
+
+>>> print(t1,type(t1),id(t1))
+(10, 'Travis', 45.67, 'Numpy', True) <class 'tuple'> 2400488702736
+>>>
+>>> del t1[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object doesn't support item deletion
+>>>
+>>> del t1
+>>> print(t1,type(t1),id(t1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 't1' is not defined. Did you mean: 't2'?
+>>>
+>>> t2
+(10, 'Travis', 45.67, 'Numpy', True)
+>>>
+>>> t1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 't1' is not defined. Did you mean: 't2'?
+>>>
+>>> del t2
+>>> t2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 't2' is not defined
+>>>
+
+****************************** SET *****************************************
+
+>>> a= set
+>>> print (a,type(a))
+<class 'set'> <class 'type'>
+>>>
+>>> a= set()
+>>> print (a,type(a))
+set() <class 'set'>
+>>>
+>>> a={1,2,3,4,5,6}
+>>> print (a,type(a))
+{1, 2, 3, 4, 5, 6} <class 'set'>
+
+>>> a={1,2,3,4,5,6}
+>>> b= set(a)
+>>>
+>>> print (b,type(b))
+{1, 2, 3, 4, 5, 6} <class 'set'>
+>>>
+>>> c=([2+3j])
+>>> print (c,type(c))
+[(2+3j)] <class 'list'>
+>>>
+>>> d=set([2+3j])
+>>> print (d,type(d))
+{(2+3j)} <class 'set'>
+
+>>> a={1,2,3,4,5,6}
+>>> b= set(a)
+>>>
+>>> print (b,type(b))
+{1, 2, 3, 4, 5, 6} <class 'set'>
+>>>
+>>> c=([2+3j])
+>>> print (c,type(c))
+[(2+3j)] <class 'list'>
+>>>
+>>> d=set([2+3j])
+>>> print (d,type(d))
+{(2+3j)} <class 'set'>
+>>>
+>>> e={1,1,3,2,3,4,5,6}
+>>> print (e,type(e))
+{1, 2, 3, 4, 5, 6} <class 'set'>
+>>>
+>>> f={10,"PGP",23.43,True,2+3j,'python',"python"}
+>>> print (f,type(f))
+{True, 10, 'python', 23.43, 'PGP', (2+3j)} <class 'set'>
+>>>
+>>> f={10,"PGP",23.43,True,2+3j,'python',"python"}
+>>> print (f,type(f))
+{True, 10, 'python', 23.43, 'PGP', (2+3j)} <class 'set'>
+>>>
+>>> g={10,"PGP",23.43,True,2+3j,'python',"python"}
+>>> print (g,type(g))
+{True, 10, 'python', 23.43, 'PGP', (2+3j)} <class 'set'>
+>>>
+>> g[2:3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+
+>>> a={23,'giri',2+3j,"padala",False}
+>>> print (a,type(a),id(a))
+{False, 'giri', 23, (2+3j), 'padala'} <class 'set'> 2402446056288
+>>>
+>>> a.add("pranay")
+>>> print (a,type(a),id(a))
+{False, 'giri', 23, 'pranay', (2+3j), 'padala'} <class 'set'> 2402446056288
+
+>>> a=10
+>>> s=set((a))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> s=set((a,))
+>>> print (s,type(s),id(s))
+{10} <class 'set'> 2402446751136
+>>>
+>>> s= set
+>>>
+>>> s= set([a])
+>>> print (s,type(s),id(s))
+{10} <class 'set'> 2402446751136
+>>>
+>>> s=set({a})
+>>> print(s,type(s))----------{10} <class 'set'>
+>>> a={111,12,122,133}
+>>> a.pop()
+122
+>>> print (a,type(a),id(a))
+{12, 133, 111} <class 'set'> 2402446056288
+
+>>> a={1,2,3,4,5,6}
+>>> b={11,12,13,14,1,2}
+>>> c={10,20,30,40}
+>>>
+>>> a.isdisjoint(b)
+False
+>>> a.isdisjoint(c)
+True
+>>>  b.isdisjoint(a)
+  File "<stdin>", line 1
+    b.isdisjoint(a)
+IndentationError: unexpected indent
+>>> b.isdisjoint(a)
+False
+>>>
+>>> {1,2,3,4}.isdisjoint{5,6,7,8}
+  File "<stdin>", line 1
+    {1,2,3,4}.isdisjoint{5,6,7,8}
+
+>>>
+>>> s1=set()
+>>> s2=set()
+>>>
+>>> s1.isdisjoint(s2)
+True
+>>> set().isdisjoint(set())
+True
+
+>>> a={1,1,2,2,3,4,5}
+>>> b={1,2,3,4,5,6,7,8,9,10}
+>>> c={6,7,8,9,10,10,20,30,40,50}
+>>>
+>>> a
+{1, 2, 3, 4, 5}
+>>> b
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>> c
+{6, 7, 8, 9, 10, 40, 50, 20, 30}
+>>>
+>>> a.issubset(b)
+True
+>>>
+>>> b.issubset(a)
+False
+>>>
+>>> a.issubset(c)
+False
+>>>
+>>> b.issubset(c)
+False
+>>>
+>>> s1=set()
+>>> s2=set()
+>>>
+>>> s1.issubset(s2)
+True
+>>>
+>>> s2.issubset(s1)
+True
+
+>>> a
+{1, 2, 3, 4, 5}
+>>> b
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>> c
+{6, 7, 8, 9, 10, 40, 50, 20, 30}
+>>>
+>>> a.union(b)
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> b.union(a)
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> d=a.union(b)
+>>> d
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>>
+>>> a.intersection(b)
+{1, 2, 3, 4, 5}
+>>>
+>>> b.intersection(c)
+{6, 7, 8, 9, 10}
+>>>
+>>>
+
+>>>
+>>>
+>>> a.differnce(b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'set' object has no attribute 'differnce'. Did you mean: 'difference'?
+>>> a.difference(b)
+set()
+>>>
+>>> b.difference(a)
+{6, 7, 8, 9, 10}
+
+>>> a={1,2,3,4,5,6,7}
+>>> a
+{1, 2, 3, 4, 5, 6, 7}
+>>>
+>>> b
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> a.symmetric_difference(b)
+{8, 9, 10}
+>>>
+>>> c={1,2,3,4,5,20,30,40}
+>>>
+>>> a.symmetric_difference(c)
+{6, 7, 40, 20, 30}
+>>>
+>>> a.update(b)
+>>> a
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+>>> a={1,2,3,4,5,6}
+>>> b={4,5,6,7,8,9,10}
+>>>
+>>> a.union(b)
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> f=a.union(b)
+>>>
+>>> f
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> a
+{1, 2, 3, 4, 5, 6}
+>>>
+>>> g=a.update(b)
+>>> g
+>>>
+
+>>> a={1,2,3,4,5,}
+>>> a
+{1, 2, 3, 4, 5}
+>>>
+>>> b={4,5,6,7,8,9,10}
+>>>
+>>> a.symmetric_difference(b)
+{1, 2, 3, 6, 7, 8, 9, 10}
+>>>
+>>> a
+{1, 2, 3, 4, 5}
+>>>
+>>> a.symmetric_difference_update(b)
+>>> a
+{1, 2, 3, 6, 7, 8, 9, 10}
+>>>
+>>> b
+{4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> c={7,8,9,10}
+>>>
+>>> b
+{4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> a
+{1, 2, 3, 6, 7, 8, 9, 10}
+>>>
+>>> d=b.symmetric_difference_update(c)
+>>> d
+>>> b
+{4, 5,6}
+
+>> q
+frozenset({1, 2, 3, 6, 7, 8, 9, 10})
+>>> w
+frozenset({4, 5, 6})
+>>> r
+frozenset({8, 9, 10, 7})
+>>> d
+frozenset()
+>>> y
+frozenset({8, 9, 10, 7})
+>>>
+>>> q.union(w)
+frozenset({1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
+>>>
+>>> a.union(b)
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+>>>
+>>> q.isdisjoint(w)
+False
+>>>
+>>> w.isdisjoint(r)
+True
+>>>
+>>> p=q.union(w)
+>>> p
+frozenset({1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
+>>>
+>>> p.issuperset(q)
+True
+>>>
+>>> q.issubset(p)
+True
+>>>
+>>> q.intersection()w
+  File "<stdin>", line 1
+    q.intersection()w
+                    ^
+SyntaxError: invalid syntax
+>>> q.intersection(w)
+frozenset({6})
+>>>
+>>> q.difference(w)
+frozenset({1, 2, 3, 7, 8, 9, 10})
+>>> w.difference(q)
+frozenset({4, 5})
+>>> q.difference(q)
+frozenset()
+>>>
+>>> q.symmetric_difference(w)
+frozenset({1, 2, 3, 4, 5, 7, 8, 9, 10})
+>>>
+
+>>> b
+{4, 5, 6}
+>>> b.discard(5)
+>>> b
+{4, 6}
+************************** DICT ***************************
+>>> d={}
+>>> print(d,type(d))
+{} <class 'dict'>
+>>>
+>>> f = dict()
+>>> print(f,type(f))
+{} <class 'dict'>
+>>>
+>>> d1={10:"RS",10:"VN",10:"TR"}
+>>> print(d1,type(d1))
+{10: 'TR'} <class 'dict'>
+>>>
+>>> d1
+{10: 'TR'}
+>>> d1={10:"RS",10:"VN",20:"TR"}
+>>> d1
+{10: 'VN', 20: 'TR'}
+>>>
+>>> d1={10:"RS",10:"VN",10:"TR",10:'pranay',10:'giri'}
+>>> d1
+{10: 'giri'}
+>>>
+>>> d1['PADALA']="GIRI PRANAY"
+>>> print(d1,type(d1),id(d1))
+{10: 'giri', 'PADALA': 'GIRI PRANAY'} <class 'dict'> 2040899643520
+>>>
+>>> d4['PADALA']="GIRI PRANAY"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd4' is not defined. Did you mean: 'd'?
+>>> d4=['PADALA']="GIRI PRANAY"
+  File "<stdin>", line 1
+    d4=['PADALA']="GIRI PRANAY"
+        ^^^^^^^^
+SyntaxError: cannot assign to literal
+>>>
+>>> d["PADALA"]="GIRI PRANAY"
+>>> print(d,type(d),id(d))
+{'PADALA': 'GIRI PRANAY'} <class 'dict'> 2040896533888
+>>>
+>>> len(d)
+1
+>>> d1={10:"RS",10:"VN",10:"TR",10:'pranay',10:'giri'}
+>>>
+>>> d1[10]
+'giri'
+>>>
+>>> d1={10:"RS",20:"VN",30:"TR",40:'pranay',50:'giri'}
+>>> d1[20]
+'VN'
+>>>
+>>> d1["VN"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'VN'
+>>>
+>>> len(d1)
+5
+>>> d5=d1
+>>> print(d5,type(d5),id(d5))
+{10: 'RS', 20: 'VN', 30: 'TR', 40: 'pranay', 50: 'giri'} <class 'dict'> 2040899643520
+>>>
+>>> d5.clear()
+>>> d5
+{}
+>>> d1
+{}
+>>>
+>>> d
+{'PADALA': 'GIRI PRANAY'}
+>>> d6=d.copy()
+>>> d6
+{'PADALA': 'GIRI PRANAY'}
+>>>
+>>> d6.clear()
+>>> d6
+{}
+>>>
+>>> d
+{'PADALA': 'GIRI PRANAY'}
+>>>
+>>> d1={10:"RS",20:"VN",30:"TR",40:'pranay',50:'giri'}
+>>> print(d1,type(d1),id(d1))
+{10: 'RS', 20: 'VN', 30: 'TR', 40: 'pranay', 50: 'giri'} <class 'dict'> 2040901032832
+>>>
+>>> d1.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pop expected at least 1 argument, got 0
+>>>
+>>> d1.pop(10)
+'RS'
+>>> d1
+{20: 'VN', 30: 'TR', 40: 'pranay', 50: 'giri'}
+>>>
+>>> d1.pop(20)
+'VN'
+>>>
+>>> d1
+{30: 'TR', 40: 'pranay', 50: 'giri'}
+>>>
+>>> d1.popitem()
+(50, 'giri')
+>>>
+>>> d1
+{30: 'TR', 40: 'pranay'}
+>>>
+>>> d6={10:"RS",20:"VN",30:"TR",40:'pranay',50:'giri'}
+>>>
+>>> print(d6,type(d6),id(d6))
+{10: 'RS', 20: 'VN', 30: 'TR', 40: 'pranay', 50: 'giri'} <class 'dict'> 2040901037056
+>>>
+>>> d6.get(40)
+'pranay'
+>>>
+>>> d6.get(10)
+'RS'
+>>>
+>>> d6.get(50)
+'giri'
+>>>
+>>> d6.get(70)
+>>>
+>>> d6.get(70,"not")
+'not'
+>>>
+>>> ks=d1.keys()
+>>> print(ks,type(ks),id(ks))
+dict_keys([30, 40]) <class 'dict_keys'> 2040901003888
+>>>
+>>> d1
+{30: 'TR', 40: 'pranay'}
+>>>
+>>>
+>>> for v in ks:
+...  print(k)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'k' is not defined. Did you mean: 'ks'?
+>>> for v in ks:
+...  print(v)
+...
+30
+40
+>>>
+>>> for b in d1.keys():
+...  print(b)
+...
+30
+40
+>>> for n in d1.values()
+  File "<stdin>", line 1
+    for n in d1.values()
+                        ^
+SyntaxError: expected ':'
+>>> for n in d1.values():
+...  print(n)
+...
+TR
+pranay
+>>>
+>>> d6={10:"RS",20:"VN",30:"TR",40:'pranay',50:'giri'}
+>>>
+>>> for k in d6.items()
+  File "<stdin>", line 1
+    for k in d6.items()
+                       ^
+SyntaxError: expected ':'
+>>> for k in d6.items():
+...  print(k)
+...
+(10, 'RS')
+(20, 'VN')
+(30, 'TR')
+(40, 'pranay')
+(50, 'giri')
+>>>
+>>> d1={10:"Python",20:"DS"}
+>>> d2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd2' is not defined. Did you mean: 'd'?
+>>> d2={1:'dsa',2:'dosa'}
+>>>
+>>> print(d1,type(d1),id(d1))
+{10: 'Python', 20: 'DS'} <class 'dict'> 2040899648704
+>>>
+>>> print(d2,type(d2),id(d2))
+{1: 'dsa', 2: 'dosa'} <class 'dict'> 2040901039424
+>>>
+>>> d1.update(d2)
+>>> d1
+{10: 'Python', 20: 'DS', 1: 'dsa', 2: 'dosa'}
+>>>
+>>> d2
+{1: 'dsa', 2: 'dosa'}
+>>>
+
+
+>>> d={1:'er',2:"data",3:'given'}
+>>> d
+{1: 'er', 2: 'data', 3: 'given'}
+>>>
+>>> d[4]='to'
+>>> d
+{1: 'er', 2: 'data', 3: 'given', 4: 'to'}
+>>>
+>>> print(d,type(d))
+{1: 'er', 2: 'data', 3: 'given', 4: 'to'} <class 'dict'>
+>>>
+>>> len(d)
+4
+>>>
+>>> b=dict(1:'er',2:"data",3:'given')
+  File "<stdin>", line 1
+    b=dict(1:'er',2:"data",3:'given')
+            ^
+SyntaxError: invalid syntax
+>>>
+
+>>> b=dict(1:'er',2:"data",3:'given')
+  File "<stdin>", line 1
+    b=dict(1:'er',2:"data",3:'given')
+            ^
+SyntaxError: invalid syntax
+>>> d={1:'er',2:"data",3:'given'}
+>>>
+>>> d.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pop expected at least 1 argument, got 0
+>>> d.pop(1)
+'er'
+>>> d
+{2: 'data', 3: 'given'}
+>>>
+>>> d.popitem()
+(3, 'given')
+>>>
+>>> d
+{2: 'data'}
+>>>
+>>> d.get(2)
+'data'
+>>> d.get(given)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'given' is not defined
+>>> d.get('given')
+>>> d
+{2: 'data'}
+>>>
+>>> b={1:'er',2:"data",3:'given'}
+>>>
+>>> k=b.keys()
+>>> k
+dict_keys([1, 2, 3])
+>>>
+>>> b.keys()
+dict_keys([1, 2, 3])
+>>>
+>>> b.values()
+dict_values(['er', 'data', 'given'])
+>>>
+>>> b.items()
+dict_items([(1, 'er'), (2, 'data'), (3, 'given')])
+>>>
+>>> c.update(b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+>>>
+>>> c={5:'giri',4:'giri'}
+>>> c.update(b)
+>>> c
+{5: 'giri', 4: 'giri', 1: 'er', 2: 'data', 3: 'given'}
+>>>
+>>> c
+{5: 'giri', 4: 'giri', 1: 'er', 2: 'data', 3: 'given'}
+>>> b.update(c)
+>>> b
+{1: 'er', 2: 'data', 3: 'given', 5: 'giri', 4: 'giri'}
+>>> c
+{5: 'giri', 4: 'giri', 1: 'er', 2: 'data', 3: 'given'}
+>>> b
+{1: 'er', 2: 'data', 3: 'given', 5: 'giri', 4: 'giri'}
+>>>
+>>>
+>>>
+>>> d
+{2: 'data'}
+>>> d.update(c)
+>>> print(d,type(d))
+{2: 'data', 5: 'giri', 4: 'giri', 1: 'er', 3: 'given'} <class 'dict'>
+>>> c
+{5: 'giri', 4: 'giri', 1: 'er', 2: 'data', 3: 'given'}
+>>>
+>>> b
+{1: 'er', 2: 'data', 3: 'given', 5: 'giri', 4: 'giri'}
+>>> b.update(c)
+>>> b
+{1: 'er', 2: 'data', 3: 'given', 5: 'giri', 4: 'giri'}
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> b.get
+<built-in method get of dict object at 0x00000198A7FAB580>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> b.get(1)
+'er'
+>>> b.get('er')
+>>> b[1]
+'er'
+>>>
+>>>
+>>>
+>>> d1={"sno":10,"sname":"RS","IM":{"cm":14,"cppm":16,"pym":18},"EM":{"cm":64,"cppm":66,"pym":68}
+,"cname":"OU"}
+>>> d1.get('sno')
+10
+>>> d1.keys()
+dict_keys(['sno', 'sname', 'IM', 'EM', 'cname'])
+>>>
+>>> d1.values()
+dict_values([10, 'RS', {'cm': 14, 'cppm': 16, 'pym': 18}, {'cm': 64, 'cppm': 66, 'pym': 68}, 'OU'])
+>>> d1={"sno":10,"sname":"RS","IM":{"cm":14,"cppm":16,"pym":18},"EM":{"cm":64,"cppm":66,"pym":68},"cname":"OU"}
+>>>
+
+
+
+***************************************** NONE ***************************************
+>>>
+>>> None=0
+  File "<stdin>", line 1
+    None=0
+    ^^^^
+SyntaxError: cannot assign to None
+>>> None==0
+False
+>>> None==False
+False
+>>> None==
+  File "<stdin>", line 1
+    None==
+          ^
+SyntaxError: invalid syntax
+>>> None==
+  File "<stdin>", line 1
+    None==
+           ^
+SyntaxError: invalid syntax
+>>> None==None
+True
+>>> print([].clear())
+None
+>>> print({}.clear())
+None
+>>> print({}.get(19))
+None
+>>>
+
+//////////////////////////////////////////////////////////////////////// DAY-10 /////////////////////////////////////////////////////////////////////
+
+*****************************  Input & Output ************************ 
+
+>>> a=10
+>>> print(a)
+10
+>>> b='padala'
+>>> print(b)
+padala
+>>>
+>>> print(a,b)
+10 padala
+>>>
+>>> c= 'giri'
+>>> d="pranay"
+>>>
+>>> print(b+c+d)
+padalagiripranay
+>>>
+>>> print(b+' '+c+' '+d)
+padala giri pranay
+>>>
+>>> f=10
+>>> g=20
+>>> print(f+g)
+30
+>>> h='20'
+>>> i='10'
+>>> print(h+i)
+2010
+>>>
+>>> print(b+c+d)
+padalagiripranay
+>>>
+>>> print(h+i)
+2010
+>>> print(int(h)+int(i))
+30
+>>> print(int(c)+int(d))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'giri'
+
+>>> print(b,c,d)
+padala giri pranay
+
+
+>>> a=22
+>>>
+>>> print('i am',a)
+i am 22
+>>>
+>>> print(a,'years old')
+22 years old
+>>>
+>>> print('i am',a,'years old')
+i am 22 years old
+>>>
+>>>
+>>> print('my age =',+a)
+my age = 22
+>>>
+>>> print('my age ='+a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>>
+>>> print('my age ='+str(a))
+my age =22
+>>>
+>>> print('my age ='-a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+
+
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> d=c+a
+>>>
+>>> print('sum of' +str(a) 'and' +str(b))
+  File "<stdin>", line 1
+    print('sum of' +str(a) 'and' +str(b))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+>>> print('sum of' +str(a) +'and' +str(b))
+sum of10and20
+
+>>> print('sum of ' +str(a) +' and ' +str(b) +'is equal to ' +str(c))
+sum of 10 and 20is equal to 30
+
+
+
+>>> a=10
+>>> b=20
+>>> c=30
+>>>
+>>> print('sum of {} and {} = {}'.format(b,a,c))
+sum of 20 and 10 = 30
+>>>
+>>> print('sum of {} and {} = {}'.format(a,b,c))
+sum of 10 and 20 = 30
+>>>
+>>> d=a+b+c
+>>> print('sum of {} , {} & {} = {}'.format(a,b,c,d))
+sum of 10 , 20 & 30 = 60
+>>>
+>>>
+>>> name='giri pranay'
+>>> sname='padala'
+>>>
+>>> print('my name is {} and surname is {}'.format(name,sname))
+my name is giri pranay and surname is padala
+>>>
+
+>>> r=range(1,9)
+>>> for v in r:
+...  print(v)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+>>> for v in r:
+...  print(v,end=' ')
+...
+1 2 3 4 5 6 7 8 >>>
+>>>  print(v,end=' * ')
+  File "<stdin>", line 1
+    print(v,end=' * ')
+IndentationError: unexpected indent
+>>>
+>>>
+>>> for v in r:
+...  print('{}'.format(v),end=" --> ")
+...
+1 --> 2 --> 3 --> 4 --> 5 --> 6 --> 7 --> 8 --> >>>
+
+
+
+/////////////////////////////////////////////////////////////////// DAY-11 /////////////////////////////////////////////////////
+
+***************** PyCharm ***********************
+
+l=int(input('enter length of rectangle: '))
+b=int(input('enter breadth of rectangle: '))
+area=l*b
+
+print('area of rectangle: ',area)
+
+a=float(input('enter 1st num:'))
+b=float(input('enter 2nd num:'))
+c=a*b
+print(c,type(c))
+
+
+q=input('enter age:')
+w=input('enter weight:')
+t=float(q)
+y=float(w)
+r=t+y
+print(r)
+
+******************** replit ***********************
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+r=a+b
+print(r)
+
+d=input( "Enter the first number: ")
+y=input("enter second number:")
+print(d+y,type(d+y))
+
+*********************************** Operators *********************************
+
+### Arithematic ###
+>>> a=10
+>>> b=20
+>>>
+>>> print(a+b)
+30
+>>>
+>>> print(a-b)
+-10
+>>>
+>>> print(a*b)
+200
+>>> print(a/b)
+0.5
+>>> print(10/3)
+3.3333333333333335
+>>>
+>>> print(10//3)
+3
+>>>
+>>> print(10.0/3.0)
+3.3333333333333335
+>>> print(10.0//3.0)
+3.0
+>>> print(9.0/3)
+3.0
+>>> print(9/3.0)
+3.0
+>>> print(9//3.0)
+3.0
+>>> print(10//3.0)
+3.0
+>>> print(10.0//3)
+3.0
+>>>
+>>> print(10**3)
+1000
+>>> print(2**3)
+8
+>>> print(10%100)
+10
+>>> print(10%3)
+1
+>>> print(10%5)
+0
+>>> print(100%5)
+0
+>>> print(5%100)
+5
+
+#### ASSIGNMENT #######
+
+>>> a=10
+>>> b=20
+>>> c=30
+>>> d=a+b+c
+>>>
+>>> print(a,b,c,d)
+10 20 30 60
+>>>
+>>> x=print(a,b,c,d)
+10 20 30 60
+>>>
+>>> for v in x:
+...  print(v,end=" < ")
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'NoneType' object is not iterable
+>>>
+>>>
+>>> q,w,e,r = 1,2,3,q+w+e
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'q' is not defined
+>>> q,w,e,r = 1,2,3,'q+w+e'
+>>> r
+'q+w+e'
+>>> q,w,e = 1,2,3
+>>> r,t,y = q+w,w-e,q+w+e
+>>> print(q,w,e,r,t,y)
+1 2 3 3 -1 6
+>>>
+>>> eno,ename,sal= 1,'giri','20LPA'
+>>> print(eno,ename,sal)
+1 giri 20LPA
+>>>
+>>>
+>>> z,c,v=20,3,21
+>>>
+>>> print(z,c,v)
+20 3 21
+>>>
+>>> z,c,v=v,c,z
+>>> print(z,c,v)
+21 3 20
+>>> z
+21
+>>> c
+3
+>>> v
+20
+
+########## ROTATIONAL (comparision operstors) #########
+
+>>> print(10!)
+  File "<stdin>", line 1
+    print(10!)
+            ^
+SyntaxError: invalid syntax
+>>>
+>>> print(10>2)
+True
+>>> print(10<2)
+False
+>>> print(10==10)
+True
+>>> print(10==20)
+False
+>>>
+>>> print(20!=20)
+False
+>>> print(20!=30)
+True
+>>>
+>>> print(20>=19)
+True
+>>> print(20>=20)
+True
+>>> print(20>=21)
+False
+>>>
+>>> print(12<=15)
+True
+>>> print(12<=11)
+False
+>>> print(12<=12)
+True
+
+########## LOGICAL ( comparision operstors) #########
+
+0
+>>> 10>20 and 20>10
+False
+>>>
+>>> 10>5 and 2>10
+False
+>>> 10>5 and 2>10 and 56>32
+False
+>>> 29>11 and 12>3
+True
+>>>
+>>> 10>20 or 20>10
+True
+>>> 10>5 or 2>10
+True
+>>> 10>5 or 2>10 or 56>32
+True
+>>> 29>11 or 12>3
+True
+>>> 1>2 or 20>30
+False
+>>> 1>2 and 20>30
+False
