@@ -2447,3 +2447,139 @@ True
 False
 >>> 1>2 and 20>30
 False
+
+****************************** Flow Control **********************************
+
+l=int(input('enter length of rectangle: '))
+b=int(input('enter breadth of rectangle: '))
+area=l*b
+
+print('area of rectangle: ',area)
+
+import os
+
+n=int(input("Enter any number:"))
+if(n%2==0):
+    print("{} is Even".format(n))
+if(n%2!=0):
+    print("{} is Odd".format(n))
+print("Program execution Completed!!!")
+
+
+a=int(input('enter any number:'))
+b=int(input('enter any number:'))
+if(a>=b):
+    print("good")
+if(a<=b):
+    print("bad")
+
+********************
+
+age=int(input("enter age :"))
+if (age <= 25):
+    print("rpohith loves girls")
+if (age == 30):
+    print("Rohith loves aunty")
+elif(age >= 50):
+    print("Rohith is gay" )
+
+m=int(input('enter the number'))
+if(m%2==0):
+    print("even number")
+if(m%2==1):
+    print('odd number')
+
+******************
+#Moviee.py
+
+TKT=input(" Do you have ticket:")
+if TKT=='yes':
+    print('you can enter')
+    print('eat popcorn and watch')
+if TKT== "no":
+    print('Get out and study  ')
+
+********************
+#NewVowelWord.py
+
+word=input("entera word:").lower()
+if('a' in word) and ('e' in word) and ('i' in word ) and ('o' in word) and ('u' in word):
+    print('{} is vowel word'.format(word))
+if('a' not in word) or ('i' not in word) or ('o' not in word) or ('u' not in word):
+    print('{} is not vowel word'.format(word))
+
+**************
+
+#program accepting a number and decide whether the number if pos or negative or zero
+#PosNegZero.py
+n=float(input("enter the number: "))
+if (n==0):
+    print("{} is zero".format(n))
+if(n>0):
+    print("{} is positive".format(n))
+if (n<0):
+    print("{} is negative".format(n))
+
+************
+
+a=float(input('enter the value a:'))
+b=float(input('enter the value b:'))
+c=float(input('enter the value c:'))
+
+if(b<=a>c):
+   print("Big({},{},{})={}".format(a,b,c,a))
+else:
+    if(a<b>=c):
+        print("Big({},{},{})={}".format(a, b, c, b))
+    else:
+        if(b<c>=a):
+            print("Big({},{},{})={}".format(a, b, c, c))
+        else:
+            print("All values are equal")
+
+***************
+
+d=int(input('enter the number'))
+if d==0:
+    print('it is zero')
+elif d==1:
+    print('it is one')
+elif d==2:
+    print('it is true')
+elif d==4:
+    print('it is four')
+else:
+    if d>0:
+        print('it is positive number')
+    else:
+        print('it is negative number')
+
+
+***************
+
+age=int(input("Enter a number:"))
+if age>22:
+    print('rohith is man')
+elif age==22:
+    print('rohith is gay')
+else :
+    print('rohith is young')
+
+
+************
+
+=int(input('enter the number'))
+if d==0:
+    print('it is zero')
+elif d==1:
+    print('it is one')
+elif d==2:
+    print('it is true')
+elif d==4:
+    print('it is four')
+else:
+    if d>0:
+        print('it is positive number')
+    else:
+        print('it is negative number')
+        
